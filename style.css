@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  background: #000000;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  z-index: -1;
+  background: url(imgs/1.jpg) no-repeat bottom/cover #000000;
+  opacity: .4;
+  filter: blur(30px);
+  -webkit-filter: blur(30px);
+}
+
+.page-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#093d4b), to(#000427));
+  background: linear-gradient(to top, #093d4b 0%, #000427 100%);
+  opacity: .9;
+  mix-blend-mode: multiply;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc((calc(13rem * 2) * 3) + (calc(13rem * 2) /5));
+  overflow-x: hidden;
+  margin-left: 6rem;
+}
+
+.wrapper {
+  position: relative;
+  width: calc(13rem * 2);
+  height: calc(13rem*1.1);
+  margin-right: calc(calc(13rem * 2)*1.1);
+}
+
+.item {
+  height: 13rem;
+  width: calc(13rem * 3/4);
+  border-radius: calc(13rem * .05);
+  position: absolute;
+  top: 0;
+  left: calc(13rem * .1);
+  -webkit-box-shadow: 5px 5px 25px #00000055;
+          box-shadow: 5px 5px 25px #00000055;
+}
+
+.item-1 {
+  background: url("imgs/1.jpg") no-repeat center/cover;
+}
+
+.item-2 {
+  background: url("imgs/2.jpg") no-repeat center/cover;
+}
+
+.item-3 {
+  background: url("imgs/3.jpg") no-repeat center/cover;
+}
+
+.backdrop-wrapper {
+  width: calc(13rem * 2);
+  height: calc(13rem * .8);
+  overflow: hidden;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 0;
+  background: black;
+}
+
+.backdrop {
+  width: calc(13rem * 2);
+  height: calc(13rem * .8);
+  background-size: cover;
+  background-position: top;
+  background-repeat: none;
+  filter: blur(39px);
+  -webkit-filter: blur(39px);
+}
+
+.backdrop-1 {
+  background: url("imgs/1.jpg");
+}
+
+.backdrop-2 {
+  background: url("imgs/2.jpg");
+}
+
+.backdrop-3 {
+  background: url("imgs/3.jpg");
+}
+/*# sourceMappingURL=style.css.map */
