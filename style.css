@@ -15,12 +15,37 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 900px;
+  height: 100vh;
+}
+
+.full-page-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -34,7 +59,7 @@ body {
   -webkit-filter: blur(30px);
 }
 
-.page-wrapper:after {
+.full-page-bg:after {
   content: "";
   position: absolute;
   top: 0;
@@ -47,29 +72,64 @@ body {
   mix-blend-mode: multiply;
 }
 
+.category-heading {
+  margin: calc(6rem / 3) 0;
+  font-size: 1.4rem;
+}
+
+.reusable-container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 6rem;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc((calc(13rem * 2) * 3) + (calc(13rem * 2) /5));
+  width: 100vw;
   overflow-x: hidden;
   margin-left: 6rem;
 }
 
+.new-releases {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100vw - (6rem * 2));
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .wrapper {
   position: relative;
-  width: calc(13rem * 2);
-  height: calc(13rem*1.1);
-  margin-right: calc(calc(13rem * 2)*1.1);
+  width: calc(13em * 2);
+  height: calc(13em*1.1);
+  margin-right: calc(calc(13em * 2)*1.1);
 }
 
 .item {
-  height: 13rem;
-  width: calc(13rem * 3/4);
-  border-radius: calc(13rem * .05);
+  height: 13em;
+  width: calc(13em * 3/4);
+  border-radius: calc(13em * .05);
   position: absolute;
   top: 0;
-  left: calc(13rem * .1);
+  left: calc(13em * .1);
+  -webkit-box-shadow: 5px 5px 25px #00000055;
+          box-shadow: 5px 5px 25px #00000055;
+}
+
+.new-item {
+  height: 13em;
+  width: calc(13em * 3/4);
+  border-radius: calc(13em * .05);
+  top: 0;
+  left: calc(13em * .1);
   -webkit-box-shadow: 5px 5px 25px #00000055;
           box-shadow: 5px 5px 25px #00000055;
 }
@@ -86,9 +146,33 @@ body {
   background: url("imgs/3.jpg") no-repeat center/cover;
 }
 
+.item-4 {
+  background: url("imgs/4.jpg") no-repeat center/cover;
+}
+
+.item-5 {
+  background: url("imgs/5.jpg") no-repeat center/cover;
+}
+
+.item-6 {
+  background: url("imgs/6.jpg") no-repeat center/cover;
+}
+
+.item-7 {
+  background: url("imgs/7.jpg") no-repeat center/cover;
+}
+
+.item-8 {
+  background: url("imgs/8.jpg") no-repeat center/cover;
+}
+
+.item-9 {
+  background: url("imgs/9.jpg") no-repeat center/cover;
+}
+
 .backdrop-wrapper {
-  width: calc(13rem * 2);
-  height: calc(13rem * .8);
+  width: calc(13em * 2);
+  height: calc(13em * .8);
   overflow: hidden;
   border-radius: 25px;
   position: absolute;
@@ -97,24 +181,28 @@ body {
 }
 
 .backdrop {
-  width: calc(13rem * 2);
-  height: calc(13rem * .8);
-  background-size: cover;
-  background-position: top;
-  background-repeat: none;
+  width: calc(13em * 2);
+  height: calc(13em * .8);
   filter: blur(39px);
   -webkit-filter: blur(39px);
 }
 
 .backdrop-1 {
-  background: url("imgs/1.jpg");
+  background: url("imgs/1.jpg") no-repeat center/cover;
 }
 
 .backdrop-2 {
-  background: url("imgs/2.jpg");
+  background: url("imgs/2.jpg") no-repeat center/cover;
 }
 
 .backdrop-3 {
-  background: url("imgs/3.jpg");
+  background: url("imgs/3.jpg") no-repeat center/cover;
+}
+
+.text {
+  position: absolute;
+  z-index: 20;
+  font-size: 1rem;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
