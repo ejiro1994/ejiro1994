@@ -112,7 +112,7 @@ body {
 .action-buttons {
     flex: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
 
     .rating, .read-more, .trailer {
