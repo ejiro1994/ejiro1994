@@ -2,11 +2,11 @@
 
 ## I'm a Software Engineer!!
 
-🔭 I’m currently interested in opportunities to use React and Golang to build applications that bring positive change in people's lives<br/>
+🔭 I’m currently interested in opportunities to use React and Golang <br/>to build applications that bring positive change in people's lives<br/>
 👯 I’m looking to collaborate on project<br/>
 🤔 I’m looking for help with project<br/>
 📫 How to reach me: hello@ejirolennox.com<br/>
-⚡ Fun fact: I make string orchestra arrangements for fun<br/>
+⚡ Fun fact: I compose string orchestra arrangements in my spare time<br/>
 
 ### Languages and Tools:
 
