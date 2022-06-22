@@ -1,8 +1,8 @@
 # Hi there, I'm Ejiro 👋🏾
 
-## I'm a FrontEnd Engineer!!
+## I'm a Software Engineer!!
 
-🔭 I’m currently ready for frontend opportunities in the technology world<br/>
+🔭 I’m currently interested in opportunities to use React and Golang to build applications that bring positive change in people's lives<br/>
 👯 I’m looking to collaborate on project<br/>
 🤔 I’m looking for help with project<br/>
 📫 How to reach me: hello@ejirolennox.com<br/>
